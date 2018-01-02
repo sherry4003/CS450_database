@@ -1,0 +1,13 @@
+Sid,Sname,Location
+string,string,string
+S001,Supplier1,NewYork
+S002,Supplier2,California
+S003,Supplier3,Virginia
+S004,Supplier4,Arizona
+S005,Supplier5,Ohio
+S006,Supplier6,Iowa
+S007,Supplier7,Georgia
+S008,Supplier8,Maryland
+S009,Supplier9,Texa
+S010,Supplier10,Maine
+S011,Supplier11,Delaware

@@ -1,0 +1,14 @@
+Dcode,Dname,Type,Manager
+Dnnn,string,string,string
+D001,Accounting,Administrative,E104
+D002,Associates,Administrative,E100
+D003,Customer Service,Administrative,E118
+D004,Shipping ,Administrative,E111
+D005,Toy,Retail,NULL
+D006,Kitchen,Retail,NULL
+D007,Bedroom,Retail,NULL
+D008,Games,Retail,NULL
+D009,Office supply,Retail,NULL
+D010,Grocery,Retail,NULL
+D011,Electronic,Retail,NULL
+D012,Garden,Retail,NULL

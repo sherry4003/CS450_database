@@ -1,0 +1,29 @@
+Iid,Iname,Desc,Quant,Price,Dcode
+string,string,string,numeric,decimal,string
+I100,Fidget Spinner Toy,Fidget Spinner Toy,25,7,D005
+I101,LEGO,Lego Star War,30,83,D005
+I102,Disney Princess,Disney Princess Little Kingdom Giftset ,26,55,D005
+I103,baby oil,baby oild soft and smooth,10,4,D006
+I104,Bath Tub,Boon DIVE Bath Tub Appliques,20,50,D006
+I105,zinus mattress,Zinus Faux Leather Upholstered Platform Bed,30,260,D006
+I106,Bed sheet,4 Piece Bed Sheets Set,10,35,D006
+I107,Junior Dress,Women Woeven Hi Lo Maxi Dress,22,25,D007
+I108,weding dress,Ball Gown Wedding Dress,5,255,D007
+I109,women_skirt,Long Wrap front Skirt,26,35,D007
+I110,Jersey Dress,Black Jersey dress,30,10,D007
+I111,Men shirts,Short sleeve Shirt Regular fit,25,13,D007
+I112,T-shirt Men,Cotton Pique T-shirt,50,15,D007
+I113,woman top,Sherosa Floral Print Cut Out Shoulder T Shirt ,25,17,D007
+I114,werewolf game,Werewolves of Millers Hollow,10,20,D008
+I115,Sport game,We Ski Nintendo Wii,12,40,D008
+I116,video game,Lego Star Wars The Complete Saga Nintendo Wii,5,28,D008
+I117,notebook,Day Designer for Blue Sky  Notebook,20,10,D009
+I118,Highlighter,Sharpie Highlighters Surligneur 10 Pack,25,10,D009
+I119,Color pencils,Art Magic PreSharpened Watercolor Pencils ,50,20,D009
+I120,paper,HP Paper Office Ultra White 20lb,30,12,D009
+I121,ink,HP 61 Black Tri color Original Ink Cartridge,16,35,D009
+I122,Smart screen TV,Samsung UN24H4000 24Inch 720p LED TV,10,200,D010
+I123,projector,Epson Home Cinema 2045 Wireless 1080p,3,500,D010
+I124,BOSE Speaker,Bose SoundLink Mini Bluetooth Speaker,10,200,D010
+I125,Garden Tool,Vremi 9 Piece Garden Tools Set,15,45,D011
+I126,Stone Map,Set of 4 Stone Pebble Garden Path Mats Outdoor Pathway,19,15,D011

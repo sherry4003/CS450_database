@@ -1,0 +1,380 @@
+30> show Departments
+
+Dcode Dname            Type           Manager 
+Dnnn  string           string         string  
+D001  Accounting       Administrative E104    
+D002  Associates       Administrative E100    
+D003  Customer Service Administrative E118    
+D004  Shipping         Administrative E111    
+D005  Toy              Retail         NULL    
+D006  Kitchen          Retail         NULL    
+D007  Bedroom          Retail         NULL    
+D008  Games            Retail         NULL    
+D009  Office supply    Retail         NULL    
+D010  Grocery          Retail         NULL    
+D011  Electronic       Retail         NULL    
+D012  Garden           Retail         NULL    
+
+31> show Employees
+
+Eid   Ename    skills       WorkDept 
+Ennn  string   string       string   
+E100  Gertrud  Sales        D002     
+E100  Gertrud  math         D002     
+E101  Zoe      math         D005     
+E101  Zoe      Sales        D005     
+E102  Debra    Sales        D002     
+E103  Debroah  Sales        D006     
+E104  Violeta  Sales        D002     
+E104  Violeta  math         D002     
+E105  Laronda  math         D006     
+E106  Janet    math         D007     
+E107  Brady    organize     D008     
+E107  Brady    sales        D008     
+E108  Zelma    organize     D008     
+E109  Brian    computer     D011     
+E110  Lulu     computer     D011     
+E111  Coreen   packing      D004     
+E112  Aracelis software     D011     
+E113  Dale     software     D012     
+E114  Cyrstal  packing      D004     
+E115  Magaly   organize     D009     
+E116  Dimple   organize     D010     
+E117  Tonie    organize     D010     
+E118  Elke     Comunication D003     
+E119  Elvera   Comunication D003     
+
+32> show Items
+
+Iid    Iname              Desc                                                   Quant   Price   Dcode  
+string string             string                                                 numeric decimal string 
+I100   Fidget Spinner Toy Fidget Spinner Toy                                     25      7       D005   
+I101   LEGO               Lego Star War                                          30      83      D005   
+I102   Disney Princess    Disney Princess Little Kingdom Giftset                 26      55      D005   
+I103   baby oil           baby oild soft and smooth                              10      4       D006   
+I104   Bath Tub           Boon DIVE Bath Tub Appliques                           20      50      D006   
+I105   zinus mattress     Zinus Faux Leather Upholstered Platform Bed            30      260     D006   
+I106   Bed sheet          4 Piece Bed Sheets Set                                 10      35      D006   
+I107   Junior Dress       Women Woeven Hi Lo Maxi Dress                          22      25      D007   
+I108   weding dress       Ball Gown Wedding Dress                                5       255     D007   
+I109   women_skirt        Long Wrap front Skirt                                  26      35      D007   
+I110   Jersey Dress       Black Jersey dress                                     30      10      D007   
+I111   Men shirts         Short sleeve Shirt Regular fit                         25      13      D007   
+I112   T-shirt Men        Cotton Pique T-shirt                                   50      15      D007   
+I113   woman top          Sherosa Floral Print Cut Out Shoulder T Shirt          25      17      D007   
+I114   werewolf game      Werewolves of Millers Hollow                           10      20      D008   
+I115   Sport game         We Ski Nintendo Wii                                    12      40      D008   
+I116   video game         Lego Star Wars The Complete Saga Nintendo Wii          5       28      D008   
+I117   notebook           Day Designer for Blue Sky  Notebook                    20      10      D009   
+I118   Highlighter        Sharpie Highlighters Surligneur 10 Pack                25      10      D009   
+I119   Color pencils      Art Magic PreSharpened Watercolor Pencils              50      20      D009   
+I120   paper              HP Paper Office Ultra White 20lb                       30      12      D009   
+I121   ink                HP 61 Black Tri color Original Ink Cartridge           16      35      D009   
+I122   Smart screen TV    Samsung UN24H4000 24Inch 720p LED TV                   10      200     D010   
+I123   projector          Epson Home Cinema 2045 Wireless 1080p                  3       500     D010   
+I124   BOSE Speaker       Bose SoundLink Mini Bluetooth Speaker                  10      200     D010   
+I125   Garden Tool        Vremi 9 Piece Garden Tools Set                         15      45      D011   
+I126   Stone Map          Set of 4 Stone Pebble Garden Path Mats Outdoor Pathway 19      15      D011   
+
+33> show Suppliers
+
+Sid    Sname      Location   
+string string     string     
+S001   Supplier1  NewYork    
+S002   Supplier2  California 
+S003   Supplier3  Virginia   
+S004   Supplier4  Arizona    
+S005   Supplier5  Ohio       
+S006   Supplier6  Iowa       
+S007   Supplier7  Georgia    
+S008   Supplier8  Maryland   
+S009   Supplier9  Texa       
+S010   Supplier10 Maine      
+S011   Supplier11 Delaware   
+
+34> show Available
+
+Sno    Iid    Cost    
+string string numeric 
+S001   I100   3       
+S004   I100   3       
+S001   I101   45      
+S002   I102   20      
+S003   I103   1       
+S004   I104   15      
+S005   I105   120     
+S006   I106   18      
+S007   I107   100     
+S008   I108   3       
+S009   I109   10      
+S010   I110   3       
+S011   I111   3       
+S001   I112   4       
+S002   I113   3       
+S003   I114   5       
+S004   I115   15      
+S005   I116   5       
+S006   I117   3       
+S001   I117   3       
+S004   I117   3       
+S007   I118   3       
+S008   I119   3       
+S009   I120   3       
+S010   I121   8       
+S009   I122   50      
+S001   I123   125     
+S002   I124   30      
+S003   I125   10      
+S004   I126   3       
+
+35> show Customers
+
+Cid    Cname    Address                       
+string string   string                        
+C201   Skye     123 6th St FL 32904           
+C202   Vicki    71 Pilgrim Avenue Chevy Chase 
+C203   Terrance 70 Bowman St  South Windsor   
+C204   Ladawn   514  Magnolia St Orlando      
+C205   Holley   44 Shirley AveWest Chicago    
+C206   Jennell  4 Goldfield RdHonolulu        
+C207   Joycelyn 129 6th St FL 32904           
+C208   Teofila  202 6th St FL 32904           
+C209   Alyson   64B Bayport St Racine         
+C210   Dian     132 6th St FL 32904           
+C211   Shad     133 6th St FL 32904           
+C212   Claretha 134 10th St FL 32904          
+C213   Mirella  135 6th St FL 32904           
+C214   Roseanna 136 6th Rd FL 32904           
+C215   Brandee  137 6th St AL 20504           
+
+36> show Procurement
+
+TransNo Iid    Sid    Quantity Date    
+string  string string numeric  numeric 
+T001    I100   S011   35       170101  
+T002    I101   S001   35       170116  
+T003    I102   S002   35       161226  
+T004    I103   S003   35       160721  
+T005    I104   S004   35       170711  
+T006    I105   S005   50       160523  
+T007    I106   S006   50       170326  
+T008    I107   S007   50       170129  
+T009    I108   S008   50       161126  
+T010    I109   S009   50       161226  
+T011    I110   S010   50       171016  
+T012    I111   S005   50       170527  
+T013    I112   S006   28       170822  
+T014    I113   S007   28       171112  
+T015    I114   S008   28       160911  
+T016    I115   S009   28       160306  
+T017    I116   S005   28       170406  
+T018    I117   S011   100      150710  
+T019    I118   S001   100      150126  
+T020    I119   S002   100      150604  
+T021    I120   S005   100      170202  
+T022    I121   S002   15       170220  
+T023    I122   S002   15       171018  
+T024    I123   S008   15       170605  
+T025    I124   S009   15       170506  
+T026    I125   S010   90       170506  
+T027    I126   S003   90       170309  
+T028    I111   S010   40       170407  
+T029    I106   S006   40       160619  
+T030    I103   S007   40       170308  
+
+37> show Creditcard
+
+Owner  CardNo Type    Exp     Limit   
+string string string  numeric decimal 
+C201   1015   Visa    170506  700     
+C201   3202   Express 170309  700     
+C202   4008   Master  180216  700     
+C203   3212   Master  170619  200     
+C203   2520   Master  190605  200     
+C204   1520   Master  170101  300     
+C205   1620   Visa    200220  300     
+C206   1261   Visa    200213  300     
+C206   1515   Visa    200226  300     
+C207   8954   Visa    180214  300     
+C208   1234   Visa    180126  400     
+C209   7955   Visa    181226  400     
+C210   6582   Express 170303  400     
+C210   7958   Express 200604  400     
+C211   4262   Express 200517  200     
+C212   1015   Express 171213  200     
+C213   9568   Express 171217  200     
+C214   9527   Express 170107  500     
+C215   5354   Visa    190216  500     
+C215   2314   Visa    190506  300     
+C215   1314   Visa    190406  500     
+
+38> show Purchase
+
+Iid    Quantity Date    CardNo 
+string numeric  numeric string 
+I100   6        160603  1015   
+I101   2        170502  1015   
+I112   2        170103  1015   
+I117   1        160205  1015   
+I123   2        160506  1015   
+I101   1        170106  3202   
+I102   1        170306  4008   
+I103   1        170605  3212   
+I104   2        170306  3212   
+I104   1        160607  2520   
+I105   1        170106  7958   
+I105   1        160305  1520   
+I106   1        170606  4008   
+I106   1        170506  1620   
+I107   1        160205  1261   
+I108   1        170105  1515   
+I109   1        161212  8954   
+I109   1        170514  4262   
+I110   1        160126  1234   
+I111   1        170105  7955   
+I112   1        160615  6582   
+I113   1        170517  7958   
+I114   1        170707  4262   
+I115   1        160101  1015   
+I116   1        170406  9568   
+I117   3        170101  9527   
+I118   2        170606  5354   
+I119   1        170306  2314   
+I120   1        160226  1314   
+I121   20       160226  5354   
+I122   17       170416  7958   
+I123   1        170507  1314   
+I124   1        160519  1314   
+I125   1        170416  7955   
+I126   1        160206  6582   
+I126   1        160719  9527   
+
+39> project (select ((Items rename (Iid as Ino, Iname as N, Desc as Description, Quant as Q, Price as P, Dcode as D)) join 
+(project (select(Available join (Available rename (Sno as S, Iid as I, Cost as C))) 
+where (Sno<S) and (Cost=C) and (Iid=I)) over Iid)) where Ino = Iid) over Ino, Description
+
+
+Ino    Description                         
+string string                              
+I100   Fidget Spinner Toy                  
+I117   Day Designer for Blue Sky  Notebook 
+
+40> project (select ((Items rename (Iid as Ino, Iname as N, Desc as Description, Quant as IQuant, Price as P, Dcode as D)) 
+join (select (Purchase join ( Procurement rename (TransNo as T, Iid as I, Sid as S, Quantity as Q, Date as D)))
+ where (Iid = I) and (Quantity > Q))) where Ino = I) over Ino, Description
+
+Ino    Description                                  
+string string                                       
+I121   HP 61 Black Tri color Original Ink Cartridge 
+I122   Samsung UN24H4000 24Inch 720p LED TV         
+
+41> (project (select Items where Quant > 20) over Iid, Desc)
+difference (
+project(Items join (project(select Purchase where Date > 170000)over Iid))over Iid, Desc)
+
+
+Iid    Desc                             
+string string                           
+I100   Fidget Spinner Toy               
+I107   Women Woeven Hi Lo Maxi Dress    
+I110   Black Jersey dress               
+I120   HP Paper Office Ultra White 20lb 
+
+42> project (select(Items rename (Iid as Ino, Iname as N, Desc as Description, Quant as IQuant, Price as P, Dcode as D) join Procurement)
+where (Ino = Iid) and (IQuant > 20) and (Date > 160000) and (Date < 170000)) over Ino, Description
+
+
+Ino    Description                                 
+string string                                      
+I102   Disney Princess Little Kingdom Giftset      
+I105   Zinus Faux Leather Upholstered Platform Bed 
+I109   Long Wrap front Skirt                       
+
+43> project (select (Customers join ((project (select Creditcard where Exp < 170714) over Owner) 
+difference (project (select Creditcard where Exp > 170714) over Owner))) where Cid =  Owner) over Cid, Cname
+
+
+Cid    Cname    
+string string   
+C201   Skye     
+C204   Ladawn   
+C214   Roseanna 
+
+44> project(Customers join (divide (project (select (Customers join (Creditcard join (Purchase join (project (select Available where Sno = "S001") over Iid)))) where Cid = Owner) over Iid, Cid)
+by (project (select Available where Sno = "S001") over Iid)))over Cid, Cname
+
+
+Cid    Cname    
+string string   
+C201   Skye     
+C212   Claretha 
+
+45> project (select (Customers join (Creditcard join (select (Purchase join Items) where (Date > 160000)
+ and (Date < 170000) and (Price > 100)))) where Cid = Owner) over Cid, Cname
+
+Cid    Cname    
+string string   
+C201   Skye     
+C204   Ladawn   
+C212   Claretha 
+C215   Brandee  
+
+46> project (select ( (project Employees over Eid, Ename, WorkDept) join (project Departments over Dcode, Manager))
+where (Manager = Eid) and (Dcode <> WorkDept)) over Eid, Ename, WorkDept, Dcode
+
+
+
+Eid   Ename   WorkDept Dcode 
+Ennn  string  string   Dnnn  
+E104  Violeta D002     D001  
+
+47> project (select(Employees join ( Employees rename Eid as E1, Ename as N1, skills as S1, WorkDept as W1))
+where(Eid <> E1)and (WorkDept = W1) and (skills = S1)) over Eid, Ename, E1, N1
+
+
+
+Eid   Ename   E1    N1      
+Ennn  string  Ennn  string  
+E100  Gertrud E102  Debra   
+E100  Gertrud E104  Violeta 
+E102  Debra   E100  Gertrud 
+E102  Debra   E104  Violeta 
+E104  Violeta E102  Debra   
+E104  Violeta E100  Gertrud 
+E107  Brady   E108  Zelma   
+E108  Zelma   E107  Brady   
+E109  Brian   E110  Lulu    
+E110  Lulu    E109  Brian   
+E111  Coreen  E114  Cyrstal 
+E114  Cyrstal E111  Coreen  
+E116  Dimple  E117  Tonie   
+E117  Tonie   E116  Dimple  
+E118  Elke    E119  Elvera  
+E119  Elvera  E118  Elke    
+
+48> (project (select(Employees join ( Employees rename Eid as E1, Ename as N1, skills as S1, WorkDept as W1))
+where(Eid <> E1)and (WorkDept = W1) and (skills = S1)) over Eid, Ename, E1, N1)
+difference
+(project (select(Employees join ( Employees rename Eid as E1, Ename as N1, skills as S1, WorkDept as W1))
+where(Eid = E1)and (WorkDept = W1) and (skills <> S1)) over Eid, Ename, E1, N1)
+
+
+Eid   Ename   E1    N1      
+Ennn  string  Ennn  string  
+E100  Gertrud E102  Debra   
+E100  Gertrud E104  Violeta 
+E102  Debra   E100  Gertrud 
+E102  Debra   E104  Violeta 
+E104  Violeta E102  Debra   
+E104  Violeta E100  Gertrud 
+E107  Brady   E108  Zelma   
+E108  Zelma   E107  Brady   
+E109  Brian   E110  Lulu    
+E110  Lulu    E109  Brian   
+E111  Coreen  E114  Cyrstal 
+E114  Cyrstal E111  Coreen  
+E116  Dimple  E117  Tonie   
+E117  Tonie   E116  Dimple  
+E118  Elke    E119  Elvera  
+E119  Elvera  E118  Elke    
+
