@@ -1,0 +1,97 @@
+DESCRIBE DEPT;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'DEPT';
+
+SELECT * FROM DEPT ;
+
+DESCRIBE EMPLOYEES;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'EMPLOYEES';
+
+SELECT * FROM EMPLOYEES;
+
+
+DESCRIBE ITEMS;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'ITEMS';
+
+SELECT * FROM ITEMS;
+
+
+DESCRIBE SUPPLIERS;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'SUPPLIERS';
+
+ SELECT * FROM SUPPLIERS;
+
+
+DESCRIBE SUPPLY;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'SUPPLY';
+
+ SELECT * FROM SUPPLY;
+
+
+DESCRIBE CUSTOMERS;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'CUSTOMERS';
+
+ SELECT * FROM CUSTOMERS;
+
+
+DESCRIBE PROCUREMENT;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'PROCUREMENT';
+
+SELECT * FROM PROCUREMENT;
+
+
+
+DESCRIBE CREDITCARD;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'CREDITCARD';
+
+SELECT * FROM CREDITCARD;
+
+
+DESCRIBE PURCHASE;
+
+SELECT X.constraint_name, X.constraint_type, X.status, X.validated,
+	X.search_condition, Y.column_name, Y.position
+	FROM   user_constraints X, user_cons_columns Y
+	WHERE  X.constraint_name = Y.constraint_name
+	AND    X.table_name = 'PURCHASE';
+
+ SELECT * FROM PURCHASE;
